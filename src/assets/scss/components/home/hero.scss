@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding-top: 87px 0 141px;
+  padding: 87px 0 141px;
 
   @include mini-desktop {
     padding: 67px 0 120px;
@@ -231,7 +231,7 @@
       color: #5c616f;
     }
 
-    &-body-th {
+    &-body-td {
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
@@ -242,7 +242,7 @@
       }
     }
 
-    &-body-th-num {
+    &-body-td-num {
       display: inline-flex;
       gap: 3px;
       align-items: center;
@@ -252,7 +252,7 @@
       line-height: 143%;
     }
 
-    &-body-th-num--green {
+    &-body-td-num--green {
       color: #60d39c;
 
       &::before {
@@ -264,7 +264,7 @@
       }
     }
 
-    &-body-th-num--red {
+    &-body-td-num--red {
       color: #e35454;
 
       &::before {
@@ -276,7 +276,7 @@
       }
     }
 
-    &-body-th-text {
+    &-body-td-text {
       font-weight: 400;
       font-size: 14px;
       line-height: 157%;
