@@ -2,6 +2,7 @@
   // + Neutral colors
   --neutral-color-10: #fff;
   --neutral-color-20: #f5f5f5;
+  --neutral-color-40: #CED1D8;
   --neutral-color-60: #18181d;
   --neutral-color-100: #1d1e25;
   --neutral-color-120: #828282;
@@ -11,6 +12,11 @@
   --primary-color-50: #4e7ddb;
   --container-padding: 15px;
   --container-width: 1200px;
+
+  @include mobile {
+    --container-width: 480px;    
+  }
+  
   --transition: 0.2s ease-in-out;
 
   // logo

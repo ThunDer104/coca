@@ -6,15 +6,15 @@
   &-h2 {
     font-size: 56px;
   }
-  
+
   &-h3 {
     font-size: 40px;
   }
-  
+
   &-h4 {
     font-size: 36px;
   }
-  
+
   &-h5 {
     font-size: 32px;
   }
@@ -26,24 +26,56 @@
   &-h5 {
     line-height: 120%;
   }
+}
 
-  .text {
-    &-p {
-      &-large {
-        font-size: 24px;
+.text {
+  &-p {
+    &-subtitle {
+      @include flex-align-center;
+      gap: 27px;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 131%;
+      letter-spacing: -0.03em;
+      color: var(--neutral-color-100);
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 76px;
+        height: 1px;
+        background-color: var(--neutral-color-100);
+        transform: translateY(-20px);
+
+        @include mini-desktop {
+          display: none;
+        }
+
       }
 
-      &-medium {
-        font-size: 18px;
+      @include tablet {
+        font-size: 25px;
       }
 
-      &-default {
-        font-size: 16px;
+      @include mobile {
+        font-size: 20px;
       }
+    }
 
-      &-small {
-        font-size: 14px;
-      }
+    &-large {
+      font-size: 24px;
+    }
+
+    &-medium {
+      font-size: 18px;
+    }
+
+    &-default {
+      font-size: 16px;
+    }
+
+    &-small {
+      font-size: 14px;
     }
   }
 }
