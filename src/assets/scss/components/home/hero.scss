@@ -15,7 +15,7 @@
     border-radius: 50%;
     opacity: 0.13;
     filter: blur(220px);
-    
+
     @include small-tablet {
       filter: blur(60px);
     }

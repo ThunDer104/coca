@@ -26,7 +26,7 @@ img {
   height: auto;
   max-width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 h1,
@@ -77,4 +77,4 @@ label {
   font-size: 0;
   opacity: 0;
   visibility: hidden;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

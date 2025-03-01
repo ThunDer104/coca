@@ -15,20 +15,23 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './src/index.html',
-      }
-    }
+      },
+    },
   },
   plugins: [
     injectHTML(),
     ViteMinifyPlugin({}),
-    ViteImageOptimizer({ // Исправлен синтаксис
+    ViteImageOptimizer({
+      // Исправлен синтаксис
       png: {
         quality: 80,
       },
       jpg: {
         quality: 80,
       },
+      jpeg: {
+        quality: 80,
+      },
     }),
-    
-  ]
+  ],
 });
