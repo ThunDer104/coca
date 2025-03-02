@@ -1,0 +1,33 @@
+.terms-conditions {
+  padding: 80px 0;
+  background-color: var(--neutral-color-10);
+
+  &__container {
+    margin: 0 auto;
+    padding: var(--container-padding);
+    max-width: var(--container-width);
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: var(--neutral-color-100);
+  }
+
+  &__subtitle {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--neutral-color-100);
+  }
+
+  &__text {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #7e8492;
+  }
+}
