@@ -1,11 +1,14 @@
 .strength {
-  border-bottom: 1px solid #ededed;
-  padding: 60px 0 160px;
+  &__container {
+    border-bottom: 1px solid #ededed;
+    padding-top: 60px;
+    padding-bottom: 160px;
 
-  @include mobile {
-    padding: 0 0 70px;
+    @include mobile {
+      padding: 0 0 70px;
+    }
   }
-    
+
   &__item {
     margin-bottom: auto;
     min-height: 150px;
