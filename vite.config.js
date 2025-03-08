@@ -11,11 +11,12 @@ export default defineConfig({
   },
   build: {
     outDir: '../dist',
-    emptyOutDir: true, // Исправлено
+    emptyOutDir: true,
     rollupOptions: {
       input: {
         main: './src/index.html',
         pricing: './src/pricing.html',
+        contact: './src/contact.html',
         conditions: './src/conditions.html',
         privacy: './src/privacy.html',
       },
@@ -25,7 +26,6 @@ export default defineConfig({
     injectHTML(),
     ViteMinifyPlugin({}),
     ViteImageOptimizer({
-      // Исправлен синтаксис
       png: {
         quality: 80,
       },
