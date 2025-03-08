@@ -1,0 +1,16 @@
+.accordion-list {
+  &__content {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.4s;
+  }
+
+  &__item {
+    &--opened {
+      .accordion-list__content {
+        max-height: auto;
+      }
+    }
+  }
+  
+} 
