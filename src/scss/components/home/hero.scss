@@ -71,12 +71,11 @@
   }
 
   &__left {
-    max-width: 590px;
+    max-width: 699px;
   }
 
   &__right {
     position: relative;
-    margin-right: 30px;
 
     @include mini-desktop {
       display: none;

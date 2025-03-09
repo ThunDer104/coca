@@ -241,7 +241,7 @@
             padding-right: 24px;
             width: 20px;
             height: 20px;
-            background: url('../images/icons/pricing-tick.svg') no-repeat;
+            background: url('/assets/images/icons/pricing-tick.svg') no-repeat;
 
             @include mobile {
               margin-right: 10px;
@@ -253,7 +253,7 @@
             color: #7e8492;
 
             &::before {
-              background: url('../images/icons/pricing-tick-inaccess.svg')
+              background: url('/assets/images/icons/pricing-tick-inaccess.svg')
                 no-repeat;
             }
           }
