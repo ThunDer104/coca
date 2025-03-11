@@ -20,6 +20,7 @@ export default defineConfig({
         main: './src/index.html',
         pricing: './src/pricing.html',
         contact: './src/contact.html',
+        about: './src/about.html',
         conditions: './src/conditions.html',
         privacy: './src/privacy.html',
       },

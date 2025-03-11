@@ -1,0 +1,18 @@
+.hero {
+  padding: 105px 0 135px;
+
+  &__btn {
+    &-icon {
+      transition: transform 1.5s, opacity var(--transition);
+
+      &:hover {
+        opacity: 0.8;
+        transform: rotate(360deg);
+      }
+
+      rect, path, circle {
+        fill: var(--neutral-color-100);
+      }
+    }
+  }
+}
