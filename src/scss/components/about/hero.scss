@@ -3,15 +3,26 @@
 
   &__btn {
     &-icon {
-      transition: transform 1.5s, opacity var(--transition);
+      transition:
+        transform 1.5s,
+        opacity var(--transition);
 
       &:hover {
-        opacity: 0.8;
-        transform: rotate(360deg);
+        path,
+        circle {
+          transform: rotate(360deg);
+        }
       }
 
-      rect, path, circle {
-        fill: var(--neutral-color-100);
+      path,
+      circle {
+        transition: all 1s;
+      }
+
+      rect,
+      path,
+      circle {
+        fill: var(--get-in-touch-color);
       }
     }
   }

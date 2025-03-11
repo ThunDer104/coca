@@ -48,6 +48,9 @@
   --z-index-2: 2;
   --z-index-3: 3;
   --z-index-4: 4;
+
+  // other
+  --get-in-touch-color: #161a34;
 }
 
 [data-theme='dark'] {
@@ -68,4 +71,6 @@
   --plans-bg-color: #18181d;
   --plans-border-color: #4b628f;
 
+  // other
+  --get-in-touch-color: #fff;
 }
