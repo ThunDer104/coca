@@ -7,22 +7,34 @@
         transform 1.5s,
         opacity var(--transition);
 
-      &:hover {
-        path,
-        circle {
-          transform: rotate(360deg);
-        }
-      }
-
       path,
       circle {
+        transform-origin: center;
         transition: all 1s;
+        animation: rotate 4s infinite linear;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
       }
 
       rect,
       path,
       circle {
         fill: var(--get-in-touch-color);
+      }
+
+      &:hover {
+        path,
+        circle {
+          transform: rotate(360deg);
+        }
       }
     }
   }
