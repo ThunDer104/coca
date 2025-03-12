@@ -1,17 +1,44 @@
 .hero {
   padding: 105px 0 135px;
 
+  @include small-tablet {
+    text-align: center;
+  }
+
+  @include mobile {
+    padding: 40px 0 50px;
+  }
+
+  &__title {
+    margin-bottom: 118px;
+    max-width: 959px;
+
+    @include small-tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__bottom {
+    @include flex-all-between;
+    gap: 40px;
+    
+    @include small-tablet {
+      gap: 30px;
+      flex-direction: column;
+    }
+  }
+
+  &__subtitle {
+    max-width: 771px;
+  }
+
   &__btn {
     &-icon {
-      transition:
-        transform 1.5s,
-        opacity var(--transition);
-
       path,
       circle {
         transform-origin: center;
         transition: all 1s;
-        animation: rotate 4s infinite linear;
+        animation: rotate 7s infinite linear;
       }
 
       @keyframes rotate {
@@ -30,12 +57,6 @@
         fill: var(--get-in-touch-color);
       }
 
-      &:hover {
-        path,
-        circle {
-          transform: rotate(360deg);
-        }
-      }
     }
   }
 }
