@@ -1,0 +1,58 @@
+.news {
+  padding: 120px 0 20px;
+  background-color: var(--overview-bg-color);
+
+  @include mobile {
+    padding: 40px 0 0;
+  }
+
+  &__list {
+    display: grid;
+    gap: 159px 32px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include tablet {
+      gap: 50px 32px;
+    }
+
+    @include mobile {
+      gap: 20px;
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    &-item {
+      &-img {
+        margin-bottom: 24px;
+      }
+
+      &-title {
+        margin-bottom: 24px;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      &-descr {
+        font-weight: 500;
+        line-height: 178%;
+        color: #7e8492;
+      }
+
+      &:last-child {
+        transform: translateY(-244px);
+
+        @include tablet {
+          transform: translateY(-144px);
+        }
+        
+        @include mobile {
+          transform: none;
+        }
+      }
+    }
+  }
+}
