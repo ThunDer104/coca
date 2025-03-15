@@ -1,0 +1,127 @@
+.ourteam {
+  padding: 160px 0;
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    max-width: 880px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+
+    @include small-tablet {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 80px;
+    max-width: 526px;
+    font-weight: 500;
+    line-height: 178%;
+    color: #7e8492;
+
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__bottom {
+    @include flex-all-between;
+    gap: 20px;
+
+    @include mini-desktop {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &-title {
+      max-width: 626px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+
+      @include mini-desktop {
+        max-width: 900px;
+      }
+
+     
+    }
+
+    &-right {
+      max-width: 506px;
+
+      @include mini-desktop {
+        max-width: 800px;
+      }
+    }
+
+    &-descr {
+      margin-bottom: 24px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 178%;
+      color: #7e8492;
+    }
+
+    &-link {
+      font-weight: 600;
+      line-height: 150%;
+      color: var(--neutral-color-100);
+    }
+  }
+
+  &__slider {
+    margin-bottom: 100px;
+
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__slide {
+    &-img {
+      margin-bottom: 16px;
+      width: 100%;
+    }
+
+    &-head {
+      @include flex-all-between;
+      margin-bottom: 8px;
+    }
+
+    &-name {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      color: var(--neutral-color-100);
+    }
+
+    &-position {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      color: #7e8492;
+    }
+
+    &-socials {
+      @include flex-align-center;
+      gap: 8px;
+
+      &-item {
+        @include flex-all-center;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        background-color: #e8e8eb;
+
+        svg path {
+          fill: var(--socials-color);
+        }
+      }
+    }
+  }
+}
